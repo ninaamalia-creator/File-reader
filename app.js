@@ -343,3 +343,10 @@ async function renderUnknown(file) {
   if (!binary) return renderText(file);
   showError(`Format ".${e || '?'}" belum didukung.`);
 }
+
+/* ---------- PWA: daftarkan service worker agar bisa di-install ---------- */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW gagal:', e));
+  });
+}
