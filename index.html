@@ -6,9 +6,9 @@
   <title>File Reader</title>
   <meta name="description" content="Pembaca dokumen simpel: Word, Excel, PowerPoint, PDF, CSV, ZIP, RAR, gambar, teks.">
   <meta name="theme-color" content="#2563eb">
-  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 
@@ -21,7 +21,7 @@
 <body>
   <header class="topbar">
     <div class="brand">
-      <img src="icons/icon.svg" alt="" width="36" height="36">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="36" height="36"> <defs> <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"> <stop offset="0" stop-color="#2563eb"/> <stop offset="1" stop-color="#7c3aed"/> </linearGradient> <linearGradient id="paper1" x1="0" y1="0" x2="0" y2="1"> <stop offset="0" stop-color="#ffffff"/> <stop offset="1" stop-color="#e8ecf7"/> </linearGradient> </defs> <rect width="36" height="36" rx="110" fill="url(#bg1)"/> <!-- Document --> <path d="M150 70 H300 L370 140 V340 a16 16 0 0 1 -16 16 H150 a16 16 0 0 1 -16 -16 V86 a16 16 0 0 1 16 -16 Z" fill="url(#paper1)"/> <path d="M300 70 V124 a16 16 0 0 0 16 16 H370 Z" fill="#c7d2fe"/> <!-- Lines of text --> <rect x="168" y="150" width="110" height="14" rx="7" fill="#93a4d6"/> <rect x="168" y="184" width="168" height="14" rx="7" fill="#93a4d6"/> <rect x="168" y="218" width="140" height="14" rx="7" fill="#93a4d6"/> <rect x="168" y="252" width="90" height="14" rx="7" fill="#93a4d6"/> <!-- Magnifier --> <circle cx="320" cy="290" r="52" fill="#ffffff" fill-opacity="0.35" stroke="#f59e0b" stroke-width="18"/> <line x1="358" y1="328" x2="400" y2="370" stroke="#f59e0b" stroke-width="24" stroke-linecap="round"/> <!-- Label --> <text x="256" y="448" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="62" letter-spacing="2" fill="#ffffff">FILE READER</text> </svg>
       <span>File Reader</span>
     </div>
     <label class="btn primary">
@@ -32,7 +32,7 @@
 
   <main>
     <section id="dropzone" class="dropzone">
-      <img src="icons/icon.svg" alt="FILE READER" width="120" height="120">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="120" height="120" role="img" aria-label="FILE READER"> <defs> <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"> <stop offset="0" stop-color="#2563eb"/> <stop offset="1" stop-color="#7c3aed"/> </linearGradient> <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1"> <stop offset="0" stop-color="#ffffff"/> <stop offset="1" stop-color="#e8ecf7"/> </linearGradient> </defs> <rect width="120" height="120" role="img" aria-label="FILE READER" rx="110" fill="url(#bg2)"/> <!-- Document --> <path d="M150 70 H300 L370 140 V340 a16 16 0 0 1 -16 16 H150 a16 16 0 0 1 -16 -16 V86 a16 16 0 0 1 16 -16 Z" fill="url(#paper2)"/> <path d="M300 70 V124 a16 16 0 0 0 16 16 H370 Z" fill="#c7d2fe"/> <!-- Lines of text --> <rect x="168" y="150" width="110" height="14" rx="7" fill="#93a4d6"/> <rect x="168" y="184" width="168" height="14" rx="7" fill="#93a4d6"/> <rect x="168" y="218" width="140" height="14" rx="7" fill="#93a4d6"/> <rect x="168" y="252" width="90" height="14" rx="7" fill="#93a4d6"/> <!-- Magnifier --> <circle cx="320" cy="290" r="52" fill="#ffffff" fill-opacity="0.35" stroke="#f59e0b" stroke-width="18"/> <line x1="358" y1="328" x2="400" y2="370" stroke="#f59e0b" stroke-width="24" stroke-linecap="round"/> <!-- Label --> <text x="256" y="448" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="62" letter-spacing="2" fill="#ffffff">FILE READER</text> </svg>
       <h1>Seret &amp; lepas file di sini</h1>
       <p>atau klik <b>Buka File</b>. File dibaca langsung di browser, tidak diunggah ke mana pun.</p>
       <div class="formats">
