@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8ecf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <!-- Document -->
+  <path d="M150 70 H300 L370 140 V340 a16 16 0 0 1 -16 16 H150 a16 16 0 0 1 -16 -16 V86 a16 16 0 0 1 16 -16 Z" fill="url(#paper)"/>
+  <path d="M300 70 V124 a16 16 0 0 0 16 16 H370 Z" fill="#c7d2fe"/>
+  <!-- Lines of text -->
+  <rect x="168" y="150" width="110" height="14" rx="7" fill="#93a4d6"/>
+  <rect x="168" y="184" width="168" height="14" rx="7" fill="#93a4d6"/>
+  <rect x="168" y="218" width="140" height="14" rx="7" fill="#93a4d6"/>
+  <rect x="168" y="252" width="90" height="14" rx="7" fill="#93a4d6"/>
+  <!-- Magnifier -->
+  <circle cx="320" cy="290" r="52" fill="#ffffff" fill-opacity="0.35" stroke="#f59e0b" stroke-width="18"/>
+  <line x1="358" y1="328" x2="400" y2="370" stroke="#f59e0b" stroke-width="24" stroke-linecap="round"/>
+  <!-- Label -->
+  <text x="256" y="448" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="62" letter-spacing="2" fill="#ffffff">FILE READER</text>
+</svg>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Reader</title>
+  <meta name="description" content="Pembaca dokumen simpel: Word, Excel, PowerPoint, PDF, CSV, ZIP, RAR, gambar, teks.">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Library pembaca format (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" width="36" height="36">
+      <span>File Reader</span>
+    </div>
+    <label class="btn primary">
+      Buka File
+      <input type="file" id="fileInput" hidden>
+    </label>
+  </header>
+
+  <main>
+    <section id="dropzone" class="dropzone">
+      <img src="icons/icon.svg" alt="FILE READER" width="120" height="120">
+      <h1>Seret &amp; lepas file di sini</h1>
+      <p>atau klik <b>Buka File</b>. File dibaca langsung di browser, tidak diunggah ke mana pun.</p>
+      <div class="formats">
+        <span>DOCX</span><span>XLSX</span><span>XLS</span><span>CSV</span><span>PPTX</span>
+        <span>PDF</span><span>ZIP</span><span>RAR</span><span>TXT</span><span>JSON</span>
+        <span>MD</span><span>Gambar</span><span>Audio</span><span>Video</span>
+      </div>
+    </section>
+
+    <section id="viewerWrap" class="viewer-wrap" hidden>
+      <div class="filebar">
+        <button id="backBtn" class="btn" hidden>&larr; Kembali</button>
+        <div id="fileInfo" class="file-info"></div>
+        <button id="closeBtn" class="btn">Tutup</button>
+      </div>
+      <div id="viewer" class="viewer"></div>
+    </section>
+  </main>
+
+  <footer>File Reader &middot; open source &middot; 100% di browser</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
